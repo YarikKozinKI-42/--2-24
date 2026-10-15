@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Зв'яжіться з командою KitchenNotes – форма зворотного зв'язку та контактна інформація." />
+  <title>Контакти – KitchenNotes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Kitchen<span>Notes</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="recipe-item.html">Рецепт</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contact.html" class="active">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section>
+        <h1>Контакти</h1>
+        <p>Маєте питання, пропозиції або хочете поділитися власним рецептом? Напишіть нам!</p>
+      </section>
+
+      <div class="contact-layout">
+
+        <section class="contact-info">
+          <h2>Як нас знайти</h2>
+          <address>
+            <p> Електронна пошта:</p>
+            <p> Телефон:</p>
+            <p> Адреса:</p>
+            <p> Графік: Пн–Пт, 9:00–18:00</p>
+          </address>
+
+          <h2 style="margin-top: 2rem;">Часті питання</h2>
+          <ul>
+            <li>Чи можна надсилати власні рецепти? – Так, через форму нижче.</li>
+            <li>Як часто оновлюється каталог? – Нові рецепти щопонеділка.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Написати нам</h2>
+
+          <form action="#" method="post">
+
+            <div class="form-group">
+              <label for="name">Ваше ім'я *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введіть ваше ім'я"
+                required
+                minlength="3"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Електронна пошта *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Тема звернення</label>
+              <select id="topic" name="topic">
+                <option value="">Оберіть тему…</option>
+                <option value="recipe">Пропозиція рецепту</option>
+                <option value="question">Питання про рецепт</option>
+                <option value="cooperation">Співпраця</option>
+                <option value="other">Інше</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Повідомлення *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Напишіть ваше повідомлення…"
+                required
+                minlength="10"
+              ></textarea>
+            </div>
+
+            <button type="submit">Надіслати повідомлення</button>
+
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Kitchen<span>Notes</span></a>
+        <p>Місце, де кулінарія стає мистецтвом.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Сторінки</h4>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Каталог рецептів</a></li>
+          <li><a href="recipe-item.html">Рецепт</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Категорії</h4>
+        <ul>
+          <li><a href="catalog.html">Паста</a></li>
+          <li><a href="catalog.html">Супи</a></li>
+          <li><a href="catalog.html">Салати</a></li>
+          <li><a href="catalog.html">Десерти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+    </div>
+  </footer>
+
+</body>
+</html>
